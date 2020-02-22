@@ -220,6 +220,24 @@ Please Note: If this doesn't work, you can check to see if your switch is within
     <Item value="1" label="3-way Toggle"/>
     <Item value="2" label="3-way Momentary"/>
     </Value>
+    <Value genre="config" type="list" size="1" index="101" label="Disable Local Relay" min="0" max="1" value="0">
+      <Help>
+      	Disable use of the relay when the switch is actuated manually.
+      	Range: 0-1
+      	Default: 0
+    </Help>
+    <Item value="0" label="Use the relay"/>
+    <Item value="1" label="Do not use the relay"/>
+    </Value>
+    <Value genre="config" type="list" size="1" index="102" label="Disable Remote Relay" min="0" max="1" value="0">
+      <Help>
+      	Disable use of the relay when the switch is actuated from a ZWave command.
+      	Range: 0-1
+      	Default: 0
+    </Help>
+    <Item value="0" label="Use the relay"/>
+    <Item value="1" label="Do not use the relay"/>
+    </Value>
   </CommandClass>
 
   <!-- Association Groups -->
